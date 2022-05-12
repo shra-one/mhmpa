@@ -30,6 +30,17 @@ $(function () {
     nextArrow: '<button class="slide-arrow next-arrow"><span class="material-icons-outlined">chevron_right</span></button>'
     });
   AOS.refresh();
+function eventFn(){
+  var dateHeight=$('.date-container ').outerHeight();
+  var calendarHeight=$('.calendar-wrapper ').outerHeight();
+ 
+  $("body").get(0).style.setProperty("--eventHeight", dateHeight+calendarHeight+'px');
+}
+eventFn();
+$(window).resize(function(){
+  eventFn();
+})
+  
 });
 
 var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
