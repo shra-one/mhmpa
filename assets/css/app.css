@@ -1380,8 +1380,8 @@ a.timeline-grid.aos-animate:before {
   --radius:8px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(360px, 1fr))[auto-fill];
-      grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  -ms-grid-columns: (minmax(500px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
   -ms-grid-rows: 2;
       grid-template-rows: 2;
   gap: var(--gutter);
